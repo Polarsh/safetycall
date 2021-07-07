@@ -1,0 +1,23 @@
+{
+  "guardians": [
+    {
+      "id": 1,
+      "username": "john",
+      "email": "john@hotmail.com",
+      "firstName": "John",
+      "lastName": "Doe",
+      "gender": "male",
+      "address": "Av. Americas 100"
+    }
+  ],
+  "urgencies": [
+    {
+      "id": 1,
+      "title": "",
+      "summary": "",
+      "latitude": "",
+      "longitude":"",
+      "reportAt": ""
+    }
+  ]
+}
