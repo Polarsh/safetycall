@@ -17,6 +17,9 @@
                     :items-per-page="5"
                     :search="search"
                     class="elevation-1" ref="guardiansTable">
+        <template v-slot:[`item.actions`]="{ item }">
+          <v-icon small class="mr-2" @click="editItem(item)">mdi-thumb-up</v-icon>
+        </template>
         <template v-slot:top>
           <v-dialog v-model="dialog" max-width="500px">
             <v-card>
@@ -72,6 +75,7 @@ export default {
         {text: 'Last Name', value: 'lastName'},
         {text: 'Gender', value: 'gender'},
         {text: 'Address', value: 'address'},
+        {text: 'Actions', value: 'actions', sortable:false}
       ],
       guardians: [],
       displayGuardians: [],
@@ -107,6 +111,12 @@ export default {
         gender:guardian.gender,
         address:guardian.address
       };
+    },
+    editItem(item) {
+      this.editedIndex = this.displayUrgencies.indexOf(item);
+      console.log(item);
+      this.editedItem = this.urgencies[this.editedIndex];
+      this.dialog = true;
     },
   },
   mounted() {

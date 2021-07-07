@@ -18,12 +18,12 @@ const routes = [
     {
         path: '/urgencies/new',
         name: 'add-urgencies',
-        component: () => import('../components/add-urgencies')
+        component: () => import('../components/add-urgency')
     },
     {
         path: '/urgencies/:id',
         name: 'edit-urgencies',
-        component: () => import('../components/edit-urgencies')
+        component: () => import('../components/edit-urgency')
     }
 ]
 

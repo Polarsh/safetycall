@@ -3,11 +3,20 @@
     {
       "id": 1,
       "username": "john",
-      "email": "john@hotmail.com",
+      "email": "johndoe@hotmail.com",
       "firstName": "John",
       "lastName": "Doe",
       "gender": "male",
       "address": "Av. Americas 100"
+    },
+    {
+      "id": 2,
+      "username": "jane",
+      "email": "janedoe@hotmail.com",
+      "firstName": "Jane",
+      "lastName": "Doe",
+      "gender": "female",
+      "address": "Av. Americas 200"
     }
   ],
   "urgencies": [
